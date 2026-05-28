@@ -9,12 +9,14 @@ export const metadata = {
     statusBarStyle: 'black-translucent',
     title: '8848 Scanner',
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: '#07090f',
 }
 
 export default function RootLayout({ children }) {
@@ -24,7 +26,6 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/icon-192.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="theme-color" content="#07090f" />
       </head>
       <body>{children}</body>
     </html>
